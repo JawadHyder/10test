@@ -25,5 +25,10 @@ public class SortOddBeforeEvenTest {
         int[] d = new int[]{2, 4, 8, 16};
         int[] sorted4 = SortOddBeforeEven.sort(d);
         Assert.assertArrayEquals(sorted4, new int[]{2, 4, 8, 16});
+
+        // Empty array
+        int[] e = new int[]{};
+        int[] sorted5 = SortOddBeforeEven.sort(e);
+        Assert.assertArrayEquals(sorted5, new int[]{});
     }
 }
