@@ -3,7 +3,7 @@ package com.jawadhyder.test;
 /**
  * Write a function to sort a list of numbers so that odd numbers are sorted before even numbers,
  * and relative order is preserved.
- * For example: [1, 2, 4, 3, 7, 16] is sorted as [1, 3, 7, 2, 4, 16] //1 2 4 6 3 7 16
+ * For example: [1, 2, 4, 3, 7, 16] is sorted as [1, 3, 7, 2, 4, 16]
  */
 public class SortOddBeforeEven {
     public static int[] sort(int[] array) {
