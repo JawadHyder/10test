@@ -30,5 +30,21 @@ public class SortOddBeforeEvenTest {
         int[] e = new int[]{};
         int[] sorted5 = SortOddBeforeEven.sort(e);
         Assert.assertArrayEquals(sorted5, new int[]{});
+
+
+        int[] f = new int[]{1, 2, 4, 6, 3, 7, 16};
+        int[] sorted6 = SortOddBeforeEven.sort(f);
+        Assert.assertArrayEquals(sorted6, new int[]{1, 3, 7, 2, 4, 6, 16});
+
+
+        int[] f2 = new int[]{1, 2, 4, 3, 6, 16};
+        int[] sorted7 = SortOddBeforeEven.sort(f2);
+        Assert.assertArrayEquals(sorted7, new int[]{1, 3, 2, 4, 6, 16});
+
+
+        int[] allSwapped = new int[]{2, 4, 6, 8, 1, 3, 5, 7};
+        int[] sorted8 = SortOddBeforeEven.sort(allSwapped);
+        Assert.assertArrayEquals(sorted8, new int[]{1, 3, 5, 7, 2, 4, 6, 8});
+
     }
 }
